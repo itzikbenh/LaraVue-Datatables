@@ -15,6 +15,10 @@ class ProjectController extends Controller
      */
     public function index(Request $request)
     {
+    	if ( $request->input('client') ) {
+    	    return Project::select('id', 'deadline', 'budget', 'status')->get();
+    	}
+
         $columns = ['deadline', 'budget', 'status'];
 
         $length = $request->input('length');

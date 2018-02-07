@@ -11,6 +11,7 @@
     </head>
     <body>
         <div id="app">
+            {{--<projects-client-side></projects-client-side>--}}
             <projects></projects>
         </div>
     </body>
