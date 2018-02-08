@@ -1,55 +1,3 @@
-<style lang="scss">
-    html {
-        height: 100%;
-    }
-
-    body {
-        background: #eeeeee;
-        padding: 60px;
-        min-height: 100%;
-    }
-
-    .projects {
-        width: 660px;
-        margin: 0 auto;
-
-        .tableFilters {
-            margin-bottom: 10px;
-            input {
-                width: 175px;
-            }
-            .control {
-                float: right;
-            }
-        }
-
-        .table {
-            width: 100%;
-
-            .sorting {
-                background-image: url('/images/sort_both.png');
-                background-repeat: no-repeat;
-                background-position: center right;
-            }
-            .sorting_asc {
-                background-image: url('/images/sort_asc.png');
-                background-repeat: no-repeat;
-                background-position: center right;
-            }
-            .sorting_desc {
-                background-image: url('/images/sort_desc.png');
-                background-repeat: no-repeat;
-                background-position: center right;
-            }
-        }
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 30px;
-    }
-</style>
-
 <template>
     <div class="projects">
         <div class="tableFilters">
@@ -123,14 +71,6 @@ export default {
                 prevPageUrl: '',
                 from: '',
                 to: ''
-            },
-            clientPagination: {
-                prevPage: '',
-                currentPage: 1,
-                nextPage: '',
-                from: '',
-                to: '',
-                total: '',
             },
         }
     },

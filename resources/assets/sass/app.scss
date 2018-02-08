@@ -3,3 +3,54 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 @import "node_modules/bulma/bulma.sass";
+
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #eeeeee;
+    padding: 60px;
+    min-height: 100%;
+}
+
+.projects {
+    width: 660px;
+    margin: 0 auto;
+
+    .tableFilters {
+        margin-bottom: 10px;
+        input {
+            width: 175px;
+        }
+        .control {
+            float: right;
+        }
+    }
+
+    .table {
+        width: 100%;
+
+        .sorting {
+            background-image: url('/images/sort_both.png');
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+        .sorting_asc {
+            background-image: url('/images/sort_asc.png');
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+        .sorting_desc {
+            background-image: url('/images/sort_desc.png');
+            background-repeat: no-repeat;
+            background-position: center right;
+        }
+    }
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
