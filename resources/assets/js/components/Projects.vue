@@ -7,9 +7,7 @@
             <div class="control">
                 <div class="select">
                     <select v-model="tableData.length" @change="getProjects()">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="30">30</option>
+                        <option v-for="(records, index) in perPage" :key="index" :value="records">{{records}}</option>
                     </select>
                 </div>
             </div>
@@ -32,7 +30,7 @@
 
 <script>
 import Datatable from './Datatable.vue';
-import Pagination from './Pagination.vue'
+import Pagination from './Pagination.vue';
 export default {
     components: { datatable: Datatable, pagination: Pagination },
     created() {
@@ -55,6 +53,7 @@ export default {
             columns: columns,
             sortKey: 'deadline',
             sortOrders: sortOrders,
+            perPage: ['10', '20', '30'],
             tableData: {
                 draw: 0,
                 length: 10,
