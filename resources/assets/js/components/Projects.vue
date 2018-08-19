@@ -30,7 +30,7 @@
 
 <script>
 import Datatable from './Datatable.vue';
-import Pagination from './Pagination.vue'
+import Pagination from './Pagination.vue';
 export default {
     components: { datatable: Datatable, pagination: Pagination },
     created() {
